@@ -1,20 +1,15 @@
-﻿FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
-WORKDIR /ktu_receptai
-EXPOSE 80
-EXPOSE 443
+FROM mcr.microsoft.com/dotnet/sdk:8.0@sha256:35792ea4ad1db051981f62b313f1be3b46b1f45cadbaa3c288cd0d3056eefb83 AS build-env
+WORKDIR /App
 
-FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
-WORKDIR /ktu_receptai/RecipesAPI2
-COPY ["RecipesAPI2.csproj", "./"]
-RUN dotnet restore "RecipesAPI2.csproj"
-COPY . .
-WORKDIR "/ktu_receptai/RecipesAPI2/"
-RUN dotnet build "RecipesAPI2.csproj" -c Release -o /app/build
+# Copy everything
+COPY . ./
+# Restore as distinct layers
+RUN dotnet restore
+# Build and publish a release
+RUN dotnet publish -c Release -o out
 
-FROM build AS publish
-RUN dotnet publish "RecipesAPI2.csproj" -c Release -o /app/publish /p:UseAppHost=false
-
-FROM base AS final
-WORKDIR /app
-COPY --from=publish /app/publish .
+# Build runtime image
+FROM mcr.microsoft.com/dotnet/aspnet:8.0@sha256:6c4df091e4e531bb93bdbfe7e7f0998e7ced344f54426b7e874116a3dc3233ff
+WORKDIR /App
+COPY --from=build-env /App/out .
 ENTRYPOINT ["dotnet", "RecipesAPI2.dll"]
