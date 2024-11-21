@@ -1,14 +1,14 @@
 ﻿FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
-WORKDIR /app
+WORKDIR /ktu_receptai
 EXPOSE 80
 EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
-WORKDIR /src
+WORKDIR /ktu_receptai/RecipesAPI2
 COPY ["RecipesAPI2.csproj", "./"]
 RUN dotnet restore "RecipesAPI2.csproj"
 COPY . .
-WORKDIR "/src/"
+WORKDIR "/ktu_receptai/RecipesAPI2/"
 RUN dotnet build "RecipesAPI2.csproj" -c Release -o /app/build
 
 FROM build AS publish
