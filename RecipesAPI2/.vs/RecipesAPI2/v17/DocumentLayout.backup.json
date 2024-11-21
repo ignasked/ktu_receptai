@@ -11,12 +11,16 @@
       "RelativeMoniker": "D:0:0:{3DD7761D-12E2-4BA1-9DF2-9D4612714A1F}|RecipesAPI2.csproj|solutionrelative:auth\\authendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3DD7761D-12E2-4BA1-9DF2-9D4612714A1F}|RecipesAPI2.csproj|c:\\git\\saitynai\\ktu_receptai\\recipesapi2\\endpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3DD7761D-12E2-4BA1-9DF2-9D4612714A1F}|RecipesAPI2.csproj|solutionrelative:endpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3DD7761D-12E2-4BA1-9DF2-9D4612714A1F}|RecipesAPI2.csproj|c:\\git\\saitynai\\ktu_receptai\\recipesapi2\\helpers\\extemsions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3DD7761D-12E2-4BA1-9DF2-9D4612714A1F}|RecipesAPI2.csproj|solutionrelative:helpers\\extemsions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DD7761D-12E2-4BA1-9DF2-9D4612714A1F}|RecipesAPI2.csproj|c:\\git\\saitynai\\ktu_receptai\\recipesapi2\\data\\entities\\session.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DD7761D-12E2-4BA1-9DF2-9D4612714A1F}|RecipesAPI2.csproj|solutionrelative:data\\entities\\session.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DD7761D-12E2-4BA1-9DF2-9D4612714A1F}|RecipesAPI2.csproj|c:\\git\\saitynai\\ktu_receptai\\recipesapi2\\endpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DD7761D-12E2-4BA1-9DF2-9D4612714A1F}|RecipesAPI2.csproj|solutionrelative:endpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3DD7761D-12E2-4BA1-9DF2-9D4612714A1F}|RecipesAPI2.csproj|c:\\git\\saitynai\\ktu_receptai\\recipesapi2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -29,10 +33,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{3DD7761D-12E2-4BA1-9DF2-9D4612714A1F}|RecipesAPI2.csproj|c:\\git\\saitynai\\ktu_receptai\\recipesapi2\\auth\\model\\reciperoles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3DD7761D-12E2-4BA1-9DF2-9D4612714A1F}|RecipesAPI2.csproj|solutionrelative:auth\\model\\reciperoles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3DD7761D-12E2-4BA1-9DF2-9D4612714A1F}|RecipesAPI2.csproj|c:\\git\\saitynai\\ktu_receptai\\recipesapi2\\data\\entities\\session.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3DD7761D-12E2-4BA1-9DF2-9D4612714A1F}|RecipesAPI2.csproj|solutionrelative:data\\entities\\session.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3DD7761D-12E2-4BA1-9DF2-9D4612714A1F}|RecipesAPI2.csproj|c:\\git\\saitynai\\ktu_receptai\\recipesapi2\\auth\\jwttokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -90,7 +90,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Git\\Saitynai\\ktu_receptai\\RecipesAPI2\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -99,8 +99,7 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-09T14:56:16.04Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
@@ -108,7 +107,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Extemsions.cs",
               "DocumentMoniker": "C:\\Git\\Saitynai\\ktu_receptai\\RecipesAPI2\\Helpers\\Extemsions.cs",
               "RelativeDocumentMoniker": "Helpers\\Extemsions.cs",
@@ -127,14 +126,14 @@
               "RelativeDocumentMoniker": "Auth\\SessionService.cs",
               "ToolTip": "C:\\Git\\Saitynai\\ktu_receptai\\RecipesAPI2\\Auth\\SessionService.cs",
               "RelativeToolTip": "Auth\\SessionService.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAhwCIAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwCIAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-20T23:35:43.24Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 3,
               "Title": "Session.cs",
               "DocumentMoniker": "C:\\Git\\Saitynai\\ktu_receptai\\RecipesAPI2\\Data\\Entities\\Session.cs",
               "RelativeDocumentMoniker": "Data\\Entities\\Session.cs",
@@ -155,12 +154,11 @@
               "RelativeToolTip": "Auth\\AuthSeeder.cs",
               "ViewState": "AgIAABAAAAAAAAAAAAAgwCcAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T21:09:41.695Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-19T21:09:41.695Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "RecipeRoles.cs",
               "DocumentMoniker": "C:\\Git\\Saitynai\\ktu_receptai\\RecipesAPI2\\Auth\\Model\\RecipeRoles.cs",
               "RelativeDocumentMoniker": "Auth\\Model\\RecipeRoles.cs",
@@ -168,8 +166,7 @@
               "RelativeToolTip": "Auth\\Model\\RecipeRoles.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T20:56:15.686Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-19T20:56:15.686Z"
             },
             {
               "$type": "Document",
@@ -179,7 +176,7 @@
               "RelativeDocumentMoniker": "Auth\\AuthEndpoints.cs",
               "ToolTip": "C:\\Git\\Saitynai\\ktu_receptai\\RecipesAPI2\\Auth\\AuthEndpoints.cs",
               "RelativeToolTip": "Auth\\AuthEndpoints.cs",
-              "ViewState": "AgIAAHMAAAAAAAAAAAAgwJEAAAA7AAAAAAAAAA==",
+              "ViewState": "AgIAAHkAAAAAAAAAAAAgwJEAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-19T20:45:20.009Z",
               "EditorCaption": ""
@@ -194,8 +191,7 @@
               "RelativeToolTip": "Auth\\JwtTokenService.cs",
               "ViewState": "AgIAABcAAAAAAAAAAAApwDIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T20:13:31.697Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-19T20:13:31.697Z"
             },
             {
               "$type": "Document",
@@ -207,8 +203,7 @@
               "RelativeToolTip": "Migrations\\20241119190210_identity.cs",
               "ViewState": "AgIAAPQAAAAAAAAAAAAgwMIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T19:48:34.572Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-19T19:48:34.572Z"
             },
             {
               "$type": "Document",
@@ -220,8 +215,7 @@
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-11-18T22:24:25.601Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-18T22:24:25.601Z"
             },
             {
               "$type": "Document",
@@ -233,12 +227,11 @@
               "RelativeToolTip": "Auth\\Model\\RecipeUser.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T22:01:44.905Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-18T22:01:44.905Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Endpoints.cs",
               "DocumentMoniker": "C:\\Git\\Saitynai\\ktu_receptai\\RecipesAPI2\\Endpoints.cs",
               "RelativeDocumentMoniker": "Endpoints.cs",
@@ -246,12 +239,11 @@
               "RelativeToolTip": "Endpoints.cs",
               "ViewState": "AgIAABABAAAAAAAAAAAwwCkBAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T00:11:21.201Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-17T00:11:21.201Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "RecipeDbContext.cs",
               "DocumentMoniker": "C:\\Git\\Saitynai\\ktu_receptai\\RecipesAPI2\\Data\\RecipeDbContext.cs",
               "RelativeDocumentMoniker": "Data\\RecipeDbContext.cs",
@@ -259,8 +251,7 @@
               "RelativeToolTip": "Data\\RecipeDbContext.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABcAAABVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T22:02:35.984Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-16T22:02:35.984Z"
             },
             {
               "$type": "Document",
@@ -272,8 +263,7 @@
               "RelativeToolTip": "Data\\Entities\\Recipe.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-09T14:57:56.281Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-09T14:57:56.281Z"
             },
             {
               "$type": "Document",
@@ -285,8 +275,7 @@
               "RelativeToolTip": "Data\\Entities\\Step.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-09T15:47:54.819Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-09T15:47:54.819Z"
             },
             {
               "$type": "Document",
@@ -298,8 +287,7 @@
               "RelativeToolTip": "Data\\Entities\\Ingredient.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-09T15:49:37.325Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-09T15:49:37.325Z"
             },
             {
               "$type": "Document",
@@ -311,8 +299,7 @@
               "RelativeToolTip": "RecipesAPI2.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-10-09T15:23:28.093Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-09T15:23:28.093Z"
             },
             {
               "$type": "Document",
@@ -324,8 +311,7 @@
               "RelativeToolTip": "Properties\\launchSettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-09T14:54:38.079Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-09T14:54:38.079Z"
             },
             {
               "$type": "Document",
@@ -337,8 +323,7 @@
               "RelativeToolTip": "Controllers\\WeatherForecastController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-09T14:54:27.25Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-09T14:54:27.25Z"
             }
           ]
         }

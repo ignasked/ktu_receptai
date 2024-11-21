@@ -4267,11 +4267,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Git\\Saitynai\\ktu_receptai\\RecipesAPI2\\RecipesAPI2.csproj",
+      "projectUniqueName": "C:\\Git\\SaitynaiGit\\ktu_receptai\\RecipesAPI2\\RecipesAPI2.csproj",
       "projectName": "RecipesAPI2",
-      "projectPath": "C:\\Git\\Saitynai\\ktu_receptai\\RecipesAPI2\\RecipesAPI2.csproj",
+      "projectPath": "C:\\Git\\SaitynaiGit\\ktu_receptai\\RecipesAPI2\\RecipesAPI2.csproj",
       "packagesPath": "C:\\Users\\ignas\\.nuget\\packages\\",
-      "outputPath": "C:\\Git\\Saitynai\\ktu_receptai\\RecipesAPI2\\obj\\",
+      "outputPath": "C:\\Git\\SaitynaiGit\\ktu_receptai\\RecipesAPI2\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
