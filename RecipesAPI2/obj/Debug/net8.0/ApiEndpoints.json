@@ -1,0 +1,504 @@
+[
+  {
+    "ContainingType": "Program\u002B\u003C\u003Ec",
+    "Method": "\u003C\u003CMain\u003E$\u003Eb__0_3",
+    "RelativePath": "",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RecipesAPI2.Auth.AuthEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CAddAuthApi\u003Eb__0_2",
+    "RelativePath": "api/accessToken",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RecipesAPI2.Auth.AuthEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CAddAuthApi\u003Eb__0_0",
+    "RelativePath": "api/accounts",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "RecipesAPI2.Auth.AuthEndpoints\u002BRegisterUserDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RecipesAPI2.Auth.AuthEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CAddAuthApi\u003Eb__0_1",
+    "RelativePath": "api/login",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "RecipesAPI2.Auth.AuthEndpoints\u002BLoginUserDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RecipesAPI2.Auth.AuthEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CAddAuthApi\u003Eb__0_3",
+    "RelativePath": "api/logout",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RecipesAPI2.Endpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CAddRecipeApi\u003Eb__0_0",
+    "RelativePath": "api/recipes",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[RecipesAPI2.Data.Entities.RecipeDto, RecipesAPI2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RecipesAPI2.Endpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CAddRecipeApi\u003Eb__0_1",
+    "RelativePath": "api/recipes",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "RecipesAPI2.Data.Entities.CreateRecipeDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "RecipesAPI2.Data.Entities.RecipeDto",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 201
+      }
+    ]
+  },
+  {
+    "ContainingType": "RecipesAPI2.Endpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CAddRecipeApi\u003Eb__0_2",
+    "RelativePath": "api/recipes/{recipeId}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "recipeId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RecipesAPI2.Endpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CAddRecipeApi\u003Eb__0_3",
+    "RelativePath": "api/recipes/{recipeId}",
+    "HttpMethod": "PUT",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "recipeId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "RecipesAPI2.Data.Entities.UpdateRecipeDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RecipesAPI2.Endpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CAddRecipeApi\u003Eb__0_4",
+    "RelativePath": "api/recipes/{recipeId}",
+    "HttpMethod": "DELETE",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "recipeId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RecipesAPI2.Endpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CAddStepApi\u003Eb__1_0",
+    "RelativePath": "api/recipes/{recipeId}/steps",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "recipeId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RecipesAPI2.Endpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CAddStepApi\u003Eb__1_1",
+    "RelativePath": "api/recipes/{recipeId}/steps",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "recipeId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "RecipesAPI2.Data.Entities.CreateStepDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RecipesAPI2.Endpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CAddStepApi\u003Eb__1_2",
+    "RelativePath": "api/recipes/{recipeId}/steps/{stepId}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "recipeId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "stepId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RecipesAPI2.Endpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CAddStepApi\u003Eb__1_3",
+    "RelativePath": "api/recipes/{recipeId}/steps/{stepId}",
+    "HttpMethod": "PUT",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "recipeId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "stepId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "RecipesAPI2.Data.Entities.UpdateStepDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RecipesAPI2.Endpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CAddStepApi\u003Eb__1_4",
+    "RelativePath": "api/recipes/{recipeId}/steps/{stepId}",
+    "HttpMethod": "DELETE",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "recipeId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "stepId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RecipesAPI2.Endpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CAddIngredientApi\u003Eb__2_0",
+    "RelativePath": "api/recipes/{recipeId}/steps/{stepId}/ingredients",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "recipeId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "stepId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RecipesAPI2.Endpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CAddIngredientApi\u003Eb__2_1",
+    "RelativePath": "api/recipes/{recipeId}/steps/{stepId}/ingredients",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "recipeId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "stepId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "RecipesAPI2.Data.Entities.CreateIngredientDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RecipesAPI2.Endpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CAddIngredientApi\u003Eb__2_2",
+    "RelativePath": "api/recipes/{recipeId}/steps/{stepId}/ingredients/{ingredientId}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "recipeId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "stepId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "ingredientId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RecipesAPI2.Endpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CAddIngredientApi\u003Eb__2_3",
+    "RelativePath": "api/recipes/{recipeId}/steps/{stepId}/ingredients/{ingredientId}",
+    "HttpMethod": "PUT",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "recipeId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "stepId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "ingredientId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "RecipesAPI2.Data.Entities.UpdateIngredientDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RecipesAPI2.Endpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CAddIngredientApi\u003Eb__2_4",
+    "RelativePath": "api/recipes/{recipeId}/steps/{stepId}/ingredients/{ingredientId}",
+    "HttpMethod": "DELETE",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "recipeId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "stepId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "ingredientId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

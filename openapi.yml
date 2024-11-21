@@ -1,0 +1,515 @@
+openapi: '3.0.3'
+info:
+  title: Recipe API
+  version: '1.0'
+servers:
+  - url: https://api.server.test/v1
+
+paths:
+  /recipes:
+    get:
+      summary: Get a list of recipes 
+      tags:
+        - recipe
+      operationId: getAllRecipes
+      responses:
+        '200':
+          description: A list of recipes
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/recipe"
+              example:
+                - id: 1
+                  title: "Apple pie"
+                  description: "A delicious apple pie"
+                - id: 2
+                  title: "Pancakes"
+                  description: "Fluffy pancakes with syrup"
+    post:
+      summary: Create a recipe
+      tags:
+        - recipe
+      operationId: createRecipe
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/createRecipe"
+            example:
+              title: "Apple pie"
+              description: "A delicious apple pie"
+      responses:
+        '201':
+          $ref: "#/components/responses/singleRecipe"
+        '400':
+          $ref: "#/components/responses/badRequest"
+        '404':
+          $ref: "#/components/responses/notFound"
+        '422':
+          $ref: "#/components/responses/unprocessableEntity"
+  /recipes/{recipeId}:
+    parameters:
+      - $ref: '#/components/parameters/recipeId'
+    get:
+      summary: Get a specific recipe
+      tags:
+        - recipe
+      operationId: getRecipe
+      responses:
+        '200':
+          $ref: "#/components/responses/singleRecipe"
+        '404':
+          $ref: "#/components/responses/notFound"
+    put:
+      summary: Update a recipe by id
+      tags:
+        - recipe
+      operationId: updateRecipe
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/updateRecipe"
+            example:
+              description: "A delicious apple pie"
+      responses:
+        '200':
+          $ref: "#/components/responses/singleRecipe"
+        '400':
+          $ref: "#/components/responses/badRequest"
+        '404':
+          $ref: "#/components/responses/notFound"
+        '422':
+          $ref: "#/components/responses/unprocessableEntity"
+    delete:
+      summary: Delete a recipe by ID
+      tags:
+        - recipe
+      operationId: deleteRecipe
+      responses:
+        "404":
+          $ref: "#/components/responses/notFound"
+        "204":
+          description: Recipe deleted
+  /recipes/{recipeId}/steps:
+    parameters:
+      - $ref: '#/components/parameters/recipeId'
+    get:
+      summary: Get steps for a recipe
+      tags:
+        - step
+      operationId: getSteps
+      responses:
+        '200':
+          $ref: "#/components/responses/recipeSteps"
+        '404':
+          $ref: "#/components/responses/notFound"
+    post:
+      summary: Add a step
+      tags:
+        - step
+      operationId: createStep
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/createStep"
+            example:
+              text: "Boil water"
+              duration: "10 minutes"
+      responses:
+        '201':
+          description: OK
+  /recipes/{recipeId}/steps/{stepId}:
+    parameters:
+      - $ref: '#/components/parameters/recipeId'
+      - $ref: '#/components/parameters/stepId'
+    get:
+      summary: Get a specific step
+      tags:
+        - step
+      operationId: getStep
+      responses:
+        '200':
+          $ref: "#/components/responses/singleStep"
+        '404':
+          $ref: "#/components/responses/notFound"
+    put:
+      summary: Update a step for a recipe
+      tags:
+        - step
+      operationId: updateStep
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/updateStep"
+            example:
+              text: "Mix ingredients"
+              duration: "5 minutes"
+      responses:
+        '200':
+          description: Updated step
+        '400':
+          $ref: "#/components/responses/badRequest"
+        '404':
+          $ref: "#/components/responses/notFound"
+        '422':
+          $ref: "#/components/responses/unprocessableEntity"
+    delete:
+      summary: Delete a step
+      tags:
+        - step
+      operationId: deleteStep
+      responses:
+        "204":
+          description: Step deleted
+        "404":
+          $ref: "#/components/responses/notFound"
+  /recipes/{recipeId}/steps/{stepId}/ingredients:
+    parameters:
+      - $ref: '#/components/parameters/recipeId'
+      - $ref: '#/components/parameters/stepId'
+    get:
+      summary: Get ingredients for a step
+      tags:
+        - ingredient
+      operationId: getIngredients
+      responses:
+        '200':
+          description: A list of ingredients
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/ingredient"
+              example:
+                - id: 1
+                  name: "Flour"
+                - id: 2
+                  name: "Sugar"
+        '404':
+          $ref: "#/components/responses/notFound"
+    post:
+      summary: Add an ingredient
+      tags:
+        - ingredient
+      operationId: createIngredient
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/createIngredient"
+            example:
+              name: "Flour"
+      responses:
+        '201':
+          description: OK
+  /recipes/{recipeId}/steps/{stepId}/ingredients/{ingredientId}:
+    parameters:
+      - $ref: '#/components/parameters/recipeId'
+      - $ref: '#/components/parameters/stepId'
+      - $ref: '#/components/parameters/ingredientId'
+    get:
+      summary: Get a specific ingredient
+      tags:
+        - ingredient
+      operationId: getIngredient
+      responses:
+        '200':
+          $ref: "#/components/responses/singleIngredient"
+        '404':
+          $ref: "#/components/responses/notFound"
+    put:
+      summary: Update an ingredient
+      tags:
+        - ingredient
+      operationId: updateIngredient
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/updateIngredient"
+            example:
+              name: "Sugar"
+      responses:
+        '200':
+          description: Updated ingredient
+        '400':
+          $ref: "#/components/responses/badRequest"
+        '404':
+          $ref: "#/components/responses/notFound"
+        '422':
+          $ref: "#/components/responses/unprocessableEntity"
+    delete:
+      summary: Delete an ingredient
+      tags:
+        - ingredient
+      operationId: deleteIngredient
+      responses:
+        "204":
+          description: Ingredient deleted
+        "404":
+          $ref: "#/components/responses/notFound"
+
+components:
+  schemas:
+    recipe:
+      type: object
+      required:
+        - title
+        - description
+      properties:
+        id:
+          type: integer
+        title:
+          type: string
+        description:
+          type: string
+        rating:
+          type: number
+    createRecipe:
+      type: object
+      properties:
+        title:
+          minLength: 2
+          maxLength: 100
+          type: string
+        description:
+          minLength: 5
+          maxLength: 500
+          type: string
+    updateRecipe:
+      type: object
+      properties:
+        description:
+          minLength: 5
+          maxLength: 500
+          type: string
+    step:
+      type: object
+      required:
+        - text
+        - duration
+      properties:
+        id:
+          type: integer
+        text:
+          minLength: 2
+          maxLength: 500
+          type: string
+        duration:
+          minimum: 5
+          type: string
+    createStep:
+      type: object
+      properties:
+        text:
+          minLength: 2
+          maxLength: 500
+          type: string
+        duration:
+          minimum: 5
+          type: string
+    updateStep:
+      type: object
+      properties:
+        text:
+          minLength: 2
+          maxLength: 500
+          type: string
+        duration:
+          minimum: 5
+          type: string
+
+    ingredient:
+      type: object
+      required:
+        - name
+        - amount
+        - unit
+      properties:
+        id:
+          type: integer
+        name:
+          type: string
+        amount:
+          type : number
+        unit:
+          type: string
+    createIngredient:
+      type: object
+      properties:
+        name:
+          minLength: 2
+          maxLength: 100
+          type: string
+        amount:
+          type : number
+        unit:
+          type: string
+    updateIngredient:
+      type: object
+      properties:
+        name:
+          minLength: 2
+          maxLength: 100
+          type: string
+        amount:
+          type : number
+        unit:
+          type: string
+
+    problemDetails:
+      type: object
+      properties:
+        type:
+          type: string
+          format: uri
+          description: A URI reference that identifies the problem type.
+        title:
+          type: string
+          description: A short, human-readable summary of the problem type.
+        status:
+          type: integer
+          format: int32
+          description: The HTTP status code applicable to this problem.
+        detail:
+          type: string
+          description: A human-readable explanation specific to this occurrence of the problem.
+        instance:
+          type: string
+          format: uri
+          description: A URI reference that identifies the specific occurrence of the problem.
+        errors:
+          type: object
+          description: A map of detailed errors for every property ([property => error])
+  responses:
+    singleRecipe:
+      description: A recipe
+      content:
+        application/json:
+          schema:
+            type: object
+            items:
+              $ref: "#/components/schemas/recipe"
+          example:
+            - id: 1
+              title: "Apple pie"
+              description: "A delicious apple pie"
+            - id: 2
+              title: "Pancakes"
+              description: "Fluffy pancakes with syrup"
+    recipeSteps:
+      description: A list of steps
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+              $ref: "#/components/schemas/step"
+          example:
+            - id: 1
+              text: "Boil water"
+              duration: "10 minutes"
+            - id: 2
+              text: "Mix ingredients"
+              duration: "5 minutes"
+    singleStep:
+      description: A step
+      content:
+        application/json:
+          schema:
+            type: object
+            items:
+              $ref: "#/components/schemas/step"
+          example:
+            id: 1
+            text: "Boil water"
+            duration: "10 minutes"
+    ingredients:
+      description: A list of ingredients
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+              $ref: "#/components/schemas/ingredient"
+          example:
+            - id: 1
+              name: "Flour"
+            - id: 2
+              name: "Sugar"
+    singleIngredient:
+      description: An ingredient
+      content:
+        application/json:
+          schema:
+            type: object
+            items:
+              $ref: "#/components/schemas/ingredient"
+          example:
+            id: 1
+            name: "Flour"
+
+    unprocessableEntity:
+      description: Unprocessable entity response
+      content:
+        application/problem+json:
+          schema:
+            type: object
+            items:
+              $ref: "#/components/schemas/problemDetails"
+          example:
+            type: "https://tools.ietf.org/html/rfc4918#section-11.2"
+            title: "Unprocessable Entity"
+            status: 422
+            errors:
+              Name:
+                - "'Name' must not be empty."
+    badRequest:
+      description: Bad request response
+    notFound:
+      description: Resource was not found
+
+  parameters:
+    recipeId:
+      name: recipeId
+      in: path
+      required: true
+      schema:
+        type: integer
+        minimum: 1
+      description: The unique identifier of the recipe
+    stepId:
+      name: stepId
+      in: path
+      required: true
+      schema:
+        type: integer
+        minimum: 1
+      description: The unique identifier of the step
+    ingredientId:
+      name: ingredientId
+      in: path
+      required: true
+      schema:
+        type: integer
+        minimum: 1
+      description: The unique identifier of the ingredient
+
+tags:
+  - name: recipe
+    description: Operations related to recipes
+  - name: step 
+    description: Operations related to steps
+  - name: ingredient
+    description: Operations related to ingredients
+
+externalDocs:
+  description: Find more info here
+  url: https://example.com/docs
