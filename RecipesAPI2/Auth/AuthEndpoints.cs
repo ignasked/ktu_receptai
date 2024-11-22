@@ -64,8 +64,8 @@ namespace RecipesAPI2.Auth
                 {
                     HttpOnly = true,
                     Expires = expiresAt,
-                    SameSite = SameSiteMode.Lax
-                    //Secure = false //TODO: set to true in production
+                    SameSite = SameSiteMode.Lax,
+                    Secure = false //TODO: set to true in production
                 };
 
                 httpContext.Response.Cookies.Append("RefreshToken", refreshToken, cookieOptions);
@@ -115,7 +115,7 @@ namespace RecipesAPI2.Auth
                     HttpOnly = true,
                     SameSite = SameSiteMode.Lax,
                     Expires = expiresAt,
-                    //Secure = false => should be true possibly
+                    Secure = true //=> should be true possibly
                 };
 
                 httpContext.Response.Cookies.Append("RefreshToken", newRefreshToken, cookieOptions);
