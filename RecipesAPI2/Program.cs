@@ -14,6 +14,7 @@ using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using RecipesAPI2.Auth;
+using Microsoft.AspNetCore.DataProtection;
 /*using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.AspNetCore.Authentication.JwtBearer;*/
 
@@ -24,6 +25,9 @@ builder.Services.AddFluentValidationAutoValidation(configuration =>
 {
     configuration.OverrideDefaultResultFactoryWith<ProblemDetailsResultFactory>();
 });
+
+builder.Services.AddDataProtection().
+    PersistKeysToFileSystem(new DirectoryInfo("/keys"));
 
 builder.Services.AddTransient<JwtTokenService>();
 builder.Services.AddTransient<SessionService>();

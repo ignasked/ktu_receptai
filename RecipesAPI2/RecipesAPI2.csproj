@@ -25,6 +25,7 @@
   <ItemGroup>
     <Folder Include="Classes\" />
     <Folder Include="Controllers\" />
+    <Folder Include="keys\" />
   </ItemGroup>
 
 </Project>
