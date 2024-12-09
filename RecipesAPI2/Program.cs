@@ -19,6 +19,14 @@ using Microsoft.AspNetCore.DataProtection;
 using Microsoft.AspNetCore.Authentication.JwtBearer;*/
 
 var builder = WebApplication.CreateBuilder(args);
+// Add CORS policy
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowFrontendOrigin", policy =>
+    {
+        policy.WithOrigins("http://localhost:8080").AllowAnyHeader().AllowAnyHeader();
+    });
+});
 builder.Services.AddDbContext<RecipeDbContext>();
 builder.Services.AddValidatorsFromAssemblyContaining<Program>();
 builder.Services.AddFluentValidationAutoValidation(configuration =>
@@ -61,14 +69,7 @@ dbContext.Database.Migrate();
 var dbSeeder = scope.ServiceProvider.GetRequiredService<AuthSeeder>();
 await dbSeeder.SeedAsync();
 
-// Add CORS policy
-builder.Services.AddCors(options =>
-{
-    options.AddPolicy("AllowFrontendOrigin", policy =>
-    {
-        policy.WithOrigins("http://localhost:8080").AllowAnyHeader().AllowAnyHeader();
-    });
-});
+
 // Use CORS
 app.UseCors("AllowFrontendOrigin");
 
