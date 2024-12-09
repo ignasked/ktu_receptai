@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Git\\SaitynaiGit\\ktu_receptai\\RecipesAPI2\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{3DD7761D-12E2-4BA1-9DF2-9D4612714A1F}|RecipesAPI2.csproj|c:\\git\\saitynaigit\\ktu_receptai\\recipesapi2\\auth\\authendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DD7761D-12E2-4BA1-9DF2-9D4612714A1F}|RecipesAPI2.csproj|solutionrelative:auth\\authendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DD7761D-12E2-4BA1-9DF2-9D4612714A1F}|RecipesAPI2.csproj|c:\\git\\saitynaigit\\ktu_receptai\\recipesapi2\\auth\\authseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DD7761D-12E2-4BA1-9DF2-9D4612714A1F}|RecipesAPI2.csproj|solutionrelative:auth\\authseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3DD7761D-12E2-4BA1-9DF2-9D4612714A1F}|RecipesAPI2.csproj|c:\\git\\saitynaigit\\ktu_receptai\\recipesapi2\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{3DD7761D-12E2-4BA1-9DF2-9D4612714A1F}|RecipesAPI2.csproj|solutionrelative:dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
@@ -13,10 +21,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{3DD7761D-12E2-4BA1-9DF2-9D4612714A1F}|RecipesAPI2.csproj|c:\\git\\saitynaigit\\ktu_receptai\\recipesapi2\\auth\\sessionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3DD7761D-12E2-4BA1-9DF2-9D4612714A1F}|RecipesAPI2.csproj|solutionrelative:auth\\sessionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3DD7761D-12E2-4BA1-9DF2-9D4612714A1F}|RecipesAPI2.csproj|c:\\git\\saitynaigit\\ktu_receptai\\recipesapi2\\auth\\authendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3DD7761D-12E2-4BA1-9DF2-9D4612714A1F}|RecipesAPI2.csproj|solutionrelative:auth\\authendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3DD7761D-12E2-4BA1-9DF2-9D4612714A1F}|RecipesAPI2.csproj|c:\\git\\saitynaigit\\ktu_receptai\\recipesapi2\\helpers\\extemsions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -41,10 +45,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{3DD7761D-12E2-4BA1-9DF2-9D4612714A1F}|RecipesAPI2.csproj|c:\\git\\saitynaigit\\ktu_receptai\\recipesapi2\\auth\\jwttokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3DD7761D-12E2-4BA1-9DF2-9D4612714A1F}|RecipesAPI2.csproj|solutionrelative:auth\\jwttokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3DD7761D-12E2-4BA1-9DF2-9D4612714A1F}|RecipesAPI2.csproj|c:\\git\\saitynaigit\\ktu_receptai\\recipesapi2\\auth\\authseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3DD7761D-12E2-4BA1-9DF2-9D4612714A1F}|RecipesAPI2.csproj|solutionrelative:auth\\authseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3DD7761D-12E2-4BA1-9DF2-9D4612714A1F}|RecipesAPI2.csproj|c:\\git\\saitynaigit\\ktu_receptai\\recipesapi2\\migrations\\20241119190210_identity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -86,11 +86,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 270,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Git\\SaitynaiGit\\ktu_receptai\\RecipesAPI2\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -99,8 +99,7 @@
               "ViewState": "AgIAAAkAAAAAAAAAAAAAACMAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-09T14:56:16.04Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
@@ -108,7 +107,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Dockerfile",
               "DocumentMoniker": "C:\\Git\\SaitynaiGit\\ktu_receptai\\RecipesAPI2\\Dockerfile",
               "RelativeDocumentMoniker": "Dockerfile",
@@ -121,7 +120,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Extemsions.cs",
               "DocumentMoniker": "C:\\Git\\SaitynaiGit\\ktu_receptai\\RecipesAPI2\\Helpers\\Extemsions.cs",
               "RelativeDocumentMoniker": "Helpers\\Extemsions.cs",
@@ -133,7 +132,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "SessionService.cs",
               "DocumentMoniker": "C:\\Git\\SaitynaiGit\\ktu_receptai\\RecipesAPI2\\Auth\\SessionService.cs",
               "RelativeDocumentMoniker": "Auth\\SessionService.cs",
@@ -145,7 +144,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Session.cs",
               "DocumentMoniker": "C:\\Git\\SaitynaiGit\\ktu_receptai\\RecipesAPI2\\Data\\Entities\\Session.cs",
               "RelativeDocumentMoniker": "Data\\Entities\\Session.cs",
@@ -157,19 +156,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 1,
               "Title": "AuthSeeder.cs",
               "DocumentMoniker": "C:\\Git\\SaitynaiGit\\ktu_receptai\\RecipesAPI2\\Auth\\AuthSeeder.cs",
               "RelativeDocumentMoniker": "Auth\\AuthSeeder.cs",
               "ToolTip": "C:\\Git\\SaitynaiGit\\ktu_receptai\\RecipesAPI2\\Auth\\AuthSeeder.cs",
               "RelativeToolTip": "Auth\\AuthSeeder.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAgwCcAAAA7AAAAAAAAAA==",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAwwCcAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T21:09:41.695Z"
+              "WhenOpened": "2024-11-19T21:09:41.695Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "RecipeRoles.cs",
               "DocumentMoniker": "C:\\Git\\SaitynaiGit\\ktu_receptai\\RecipesAPI2\\Auth\\Model\\RecipeRoles.cs",
               "RelativeDocumentMoniker": "Auth\\Model\\RecipeRoles.cs",
@@ -181,19 +181,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "AuthEndpoints.cs",
               "DocumentMoniker": "C:\\Git\\SaitynaiGit\\ktu_receptai\\RecipesAPI2\\Auth\\AuthEndpoints.cs",
               "RelativeDocumentMoniker": "Auth\\AuthEndpoints.cs",
               "ToolTip": "C:\\Git\\SaitynaiGit\\ktu_receptai\\RecipesAPI2\\Auth\\AuthEndpoints.cs",
               "RelativeToolTip": "Auth\\AuthEndpoints.cs",
-              "ViewState": "AgIAAHkAAAAAAAAAAAAgwJEAAAA7AAAAAAAAAA==",
+              "ViewState": "AgIAAJIAAAAAAAAAAAASwHUAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T20:45:20.009Z"
+              "WhenOpened": "2024-11-19T20:45:20.009Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "JwtTokenService.cs",
               "DocumentMoniker": "C:\\Git\\SaitynaiGit\\ktu_receptai\\RecipesAPI2\\Auth\\JwtTokenService.cs",
               "RelativeDocumentMoniker": "Auth\\JwtTokenService.cs",
@@ -241,7 +242,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Endpoints.cs",
               "DocumentMoniker": "C:\\Git\\SaitynaiGit\\ktu_receptai\\RecipesAPI2\\Endpoints.cs",
               "RelativeDocumentMoniker": "Endpoints.cs",
@@ -253,7 +254,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "RecipeDbContext.cs",
               "DocumentMoniker": "C:\\Git\\SaitynaiGit\\ktu_receptai\\RecipesAPI2\\Data\\RecipeDbContext.cs",
               "RelativeDocumentMoniker": "Data\\RecipeDbContext.cs",

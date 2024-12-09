@@ -61,6 +61,17 @@ dbContext.Database.Migrate();
 var dbSeeder = scope.ServiceProvider.GetRequiredService<AuthSeeder>();
 await dbSeeder.SeedAsync();
 
+// Add CORS policy
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowFrontendOrigin", policy =>
+    {
+        policy.WithOrigins("http://localhost:8080").AllowAnyHeader().AllowAnyHeader();
+    });
+});
+// Use CORS
+app.UseCors("AllowFrontendOrigin");
+
 app.AddAuthApi();
 app.AddRecipeApi();
 app.AddStepApi();
@@ -69,6 +80,8 @@ app.AddIngredientApi();
 app.MapGet("/", () => "Hello World!");
 app.UseAuthentication();
 app.UseAuthorization();
+
+app.MapControllers();
 app.Run();
 
 
