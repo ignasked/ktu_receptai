@@ -24,7 +24,7 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowFrontendOrigin", policy =>
     {
-        policy.WithOrigins("http://localhost:8080").AllowAnyHeader().AllowAnyHeader();
+        policy.WithOrigins("http://localhost:8080").AllowAnyMethod().AllowAnyHeader().AllowCredentials();
     });
 });
 builder.Services.AddDbContext<RecipeDbContext>();
@@ -44,6 +44,9 @@ builder.Services.AddScoped<AuthSeeder>();
 builder.Services.AddIdentity<RecipeUser, IdentityRole>()
     .AddEntityFrameworkStores<RecipeDbContext>()
     .AddDefaultTokenProviders();
+
+// Use CORS
+app.UseCors("AllowFrontendOrigin");
 
 builder.Services.AddAuthentication(options =>
 {
@@ -70,8 +73,7 @@ var dbSeeder = scope.ServiceProvider.GetRequiredService<AuthSeeder>();
 await dbSeeder.SeedAsync();
 
 
-// Use CORS
-app.UseCors("AllowFrontendOrigin");
+
 
 app.AddAuthApi();
 app.AddRecipeApi();
