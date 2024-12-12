@@ -45,8 +45,7 @@ builder.Services.AddIdentity<RecipeUser, IdentityRole>()
     .AddEntityFrameworkStores<RecipeDbContext>()
     .AddDefaultTokenProviders();
 
-// Use CORS
-app.UseCors("AllowFrontendOrigin");
+
 
 builder.Services.AddAuthentication(options =>
 {
@@ -81,6 +80,8 @@ app.AddStepApi();
 app.AddIngredientApi();
 
 app.MapGet("/", () => "Hello World!");
+// Use CORS
+app.UseCors("AllowFrontendOrigin");
 app.UseAuthentication();
 app.UseAuthorization();
 
