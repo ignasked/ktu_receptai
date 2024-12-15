@@ -64,9 +64,8 @@ namespace RecipesAPI2.Auth
                 {
                     HttpOnly = true,
                     Expires = expiresAt,
-                    SameSite = SameSiteMode.None,
-                    Secure = false, //TODO: set to true in production
-                    Domain = "localhost" // Use "localhost" for local testing
+                    SameSite = SameSiteMode.Lax,
+                    Secure = true //TODO: set to true in production
                 };
 
                 httpContext.Response.Cookies.Append("RefreshToken", refreshToken, cookieOptions);

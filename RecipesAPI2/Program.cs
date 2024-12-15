@@ -22,7 +22,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add CORS policy
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowFrontendOrigin", policy =>
+    options.AddDefaultPolicy(policy =>
     {
         policy.WithOrigins("http://localhost:8080").AllowAnyMethod().AllowAnyHeader().AllowCredentials();
     });
@@ -65,6 +65,8 @@ builder.Services.AddAuthorization();
 
 var app = builder.Build();
 
+// Use CORS
+app.UseCors();
 using var scope = app.Services.CreateScope();
 var dbContext = scope.ServiceProvider.GetRequiredService<RecipeDbContext>();
 dbContext.Database.Migrate();
@@ -80,8 +82,7 @@ app.AddStepApi();
 app.AddIngredientApi();
 
 app.MapGet("/", () => "Hello World!");
-// Use CORS
-app.UseCors("AllowFrontendOrigin");
+
 app.UseAuthentication();
 app.UseAuthorization();
 
