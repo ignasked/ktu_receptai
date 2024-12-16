@@ -8,6 +8,7 @@ namespace RecipesAPI2.Auth
 {
     public static class AuthEndpoints
     {
+
         public static void AddAuthApi(this WebApplication app)
         {
             //register
