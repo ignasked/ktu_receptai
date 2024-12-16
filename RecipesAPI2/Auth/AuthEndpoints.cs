@@ -113,9 +113,9 @@ namespace RecipesAPI2.Auth
                 var cookieOptions = new CookieOptions
                 {
                     HttpOnly = true,
-                    SameSite = SameSiteMode.Lax,
+                    SameSite = SameSiteMode.None,
                     Expires = expiresAt,
-                    Secure = true //=> should be true possibly
+                    Secure = false //=> should be true possibly
                 };
 
                 httpContext.Response.Cookies.Append("RefreshToken", newRefreshToken, cookieOptions);
