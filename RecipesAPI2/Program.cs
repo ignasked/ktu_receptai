@@ -24,7 +24,7 @@ builder.Services.AddCors(options =>
 {
     options.AddDefaultPolicy(policy =>
     {
-        policy.WithOrigins("https://localhost:8080").AllowAnyMethod().AllowAnyHeader().AllowCredentials();
+        policy.WithOrigins("https://127.0.0.1:8080").AllowAnyMethod().AllowAnyHeader().AllowCredentials();
     });
 });
 builder.Services.AddDbContext<RecipeDbContext>();
