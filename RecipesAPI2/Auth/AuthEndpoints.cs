@@ -43,8 +43,10 @@ namespace RecipesAPI2.Auth
             //login
             app.MapPost("api/login", async (UserManager<RecipeUser> userManager,JwtTokenService jwtTokenService,SessionService sessionService,HttpContext httpContext, LoginUserDto dto) =>
             {
+                Console.WriteLine("Login username: " + dto.Username);
                 //check if user exists
                 var user = await userManager.FindByNameAsync(dto.Username);
+                
                 if (user == null)
                     return Results.UnprocessableEntity("User with this username does not exist");
 
@@ -76,11 +78,12 @@ namespace RecipesAPI2.Auth
 
             app.MapPost("api/accessToken", async (UserManager<RecipeUser> userManager, JwtTokenService jwtTokenService, SessionService sessionService, HttpContext httpContext) =>
             {
+                Console.WriteLine("--api/accessToken");
                 if (!httpContext.Request.Cookies.TryGetValue("RefreshToken", out var refreshToken))
                 {
                     return Results.UnprocessableEntity();
                 }
-
+                Console.WriteLine("RefreshToken: ",refreshToken);
                 if (!jwtTokenService.TryParseRefreshToken(refreshToken, out var claims))
                 {
                     return Results.UnprocessableEntity();
