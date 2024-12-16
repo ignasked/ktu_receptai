@@ -79,6 +79,10 @@ namespace RecipesAPI2.Auth
             app.MapPost("api/accessToken", async (UserManager<RecipeUser> userManager, JwtTokenService jwtTokenService, SessionService sessionService, HttpContext httpContext) =>
             {
                 Console.WriteLine("--api/accessToken");
+                foreach (var cookie in httpContext.Request.Cookies)
+                {
+                    Console.WriteLine($"Cookie: {cookie.Key} = {cookie.Value}");
+                }
                 if (!httpContext.Request.Cookies.TryGetValue("RefreshToken", out var refreshToken))
                 {
                     return Results.UnprocessableEntity();
