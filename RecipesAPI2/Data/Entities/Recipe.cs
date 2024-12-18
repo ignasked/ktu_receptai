@@ -20,11 +20,11 @@ namespace RecipesAPI2.Data.Entities
 
         public RecipeDto ToDto()
         {
-            return new RecipeDto(Id, Title, Description, Rating);
+            return new RecipeDto(Id, Title, Description, Rating, UserId);
         }   
     }
 
-    public record RecipeDto(int Id, string Title, string Description, double Rating);
+    public record RecipeDto(int Id, string Title, string Description, double Rating, string UserId);
     public record CreateRecipeDto(string Title, string Description)
     {
         public class CreateRecipeDTOValidator : AbstractValidator<CreateRecipeDto>

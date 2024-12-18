@@ -135,6 +135,7 @@ namespace RecipesAPI2.Auth
 
             app.MapPost("api/logout", async (UserManager<RecipeUser> userManager, JwtTokenService jwtTokenService, SessionService sessionService, HttpContext httpContext) =>
             {
+
                 if (!httpContext.Request.Cookies.TryGetValue("RefreshToken", out var refreshToken))
                 {
                     return Results.UnprocessableEntity();
