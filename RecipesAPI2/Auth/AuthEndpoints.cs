@@ -136,9 +136,9 @@ namespace RecipesAPI2.Auth
             app.MapPost("api/logout", async (UserManager<RecipeUser> userManager, JwtTokenService jwtTokenService, SessionService sessionService, HttpContext httpContext) =>
             {
 
-                if (!httpContext.Request.Cookies.TryGetValue("RefreshToken", out var refreshToken))
+                /*if (!httpContext.Request.Cookies.TryGetValue("RefreshToken", out var refreshToken))
                 {
-                    return Results.UnprocessableEntity();
+                    //return Results.UnprocessableEntity();
                 }
 
                 if (!jwtTokenService.TryParseRefreshToken(refreshToken, out var claims))
@@ -153,8 +153,9 @@ namespace RecipesAPI2.Auth
                 }
 
                 await sessionService.InvalidateSessionAsync(Guid.Parse(sessionId));
+                
                 httpContext.Response.Cookies.Delete("RefreshToken");
-
+                */
                 return Results.Ok();
             });
 
