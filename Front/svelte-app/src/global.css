@@ -1,0 +1,21 @@
+.add-btn {
+    font-size: 1.5rem;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    border: none;
+    color: white;
+    background-color: #28a745;
+    border-radius: 50%; /* Optional: makes the button circular */
+    padding: 0; /* Ensure no extra space around the text */
+    padding-bottom: 4px; /* Slightly raises the text */
+    margin: 0; /* Removes unnecessary margin if present */
+    line-height: 1; /* Keeps text alignment consistent */
+  }
+
+.add-btn:hover {
+    background-color: #218838;
+}

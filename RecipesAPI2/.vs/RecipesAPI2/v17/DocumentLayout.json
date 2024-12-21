@@ -3,28 +3,40 @@
   "WorkspaceRootPath": "C:\\Git\\SaitynaiGit\\ktu_receptai\\RecipesAPI2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3DD7761D-12E2-4BA1-9DF2-9D4612714A1F}|RecipesAPI2.csproj|c:\\git\\saitynaigit\\ktu_receptai\\recipesapi2\\data\\entities\\recipe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3DD7761D-12E2-4BA1-9DF2-9D4612714A1F}|RecipesAPI2.csproj|solutionrelative:data\\entities\\recipe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3DD7761D-12E2-4BA1-9DF2-9D4612714A1F}|RecipesAPI2.csproj|c:\\git\\saitynaigit\\ktu_receptai\\recipesapi2\\data\\entities\\ingredient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3DD7761D-12E2-4BA1-9DF2-9D4612714A1F}|RecipesAPI2.csproj|solutionrelative:data\\entities\\ingredient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3DD7761D-12E2-4BA1-9DF2-9D4612714A1F}|RecipesAPI2.csproj|c:\\git\\saitynaigit\\ktu_receptai\\recipesapi2\\data\\entities\\session.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3DD7761D-12E2-4BA1-9DF2-9D4612714A1F}|RecipesAPI2.csproj|solutionrelative:data\\entities\\session.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3DD7761D-12E2-4BA1-9DF2-9D4612714A1F}|RecipesAPI2.csproj|c:\\git\\saitynaigit\\ktu_receptai\\recipesapi2\\auth\\authendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DD7761D-12E2-4BA1-9DF2-9D4612714A1F}|RecipesAPI2.csproj|solutionrelative:auth\\authendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3DD7761D-12E2-4BA1-9DF2-9D4612714A1F}|RecipesAPI2.csproj|c:\\git\\saitynaigit\\ktu_receptai\\recipesapi2\\endpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3DD7761D-12E2-4BA1-9DF2-9D4612714A1F}|RecipesAPI2.csproj|solutionrelative:endpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3DD7761D-12E2-4BA1-9DF2-9D4612714A1F}|RecipesAPI2.csproj|c:\\git\\saitynaigit\\ktu_receptai\\recipesapi2\\auth\\authendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3DD7761D-12E2-4BA1-9DF2-9D4612714A1F}|RecipesAPI2.csproj|solutionrelative:auth\\authendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3DD7761D-12E2-4BA1-9DF2-9D4612714A1F}|RecipesAPI2.csproj|c:\\git\\saitynaigit\\ktu_receptai\\recipesapi2\\data\\entities\\session.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DD7761D-12E2-4BA1-9DF2-9D4612714A1F}|RecipesAPI2.csproj|solutionrelative:data\\entities\\session.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DD7761D-12E2-4BA1-9DF2-9D4612714A1F}|RecipesAPI2.csproj|c:\\git\\saitynaigit\\ktu_receptai\\recipesapi2\\data\\recipedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DD7761D-12E2-4BA1-9DF2-9D4612714A1F}|RecipesAPI2.csproj|solutionrelative:data\\recipedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DD7761D-12E2-4BA1-9DF2-9D4612714A1F}|RecipesAPI2.csproj|c:\\git\\saitynaigit\\ktu_receptai\\recipesapi2\\data\\entities\\ingredient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DD7761D-12E2-4BA1-9DF2-9D4612714A1F}|RecipesAPI2.csproj|solutionrelative:data\\entities\\ingredient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DD7761D-12E2-4BA1-9DF2-9D4612714A1F}|RecipesAPI2.csproj|c:\\git\\saitynaigit\\ktu_receptai\\recipesapi2\\data\\entities\\step.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DD7761D-12E2-4BA1-9DF2-9D4612714A1F}|RecipesAPI2.csproj|solutionrelative:data\\entities\\step.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DD7761D-12E2-4BA1-9DF2-9D4612714A1F}|RecipesAPI2.csproj|c:\\git\\saitynaigit\\ktu_receptai\\recipesapi2\\data\\entities\\recipe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DD7761D-12E2-4BA1-9DF2-9D4612714A1F}|RecipesAPI2.csproj|solutionrelative:data\\entities\\recipe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3DD7761D-12E2-4BA1-9DF2-9D4612714A1F}|RecipesAPI2.csproj|c:\\git\\saitynaigit\\ktu_receptai\\recipesapi2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3DD7761D-12E2-4BA1-9DF2-9D4612714A1F}|RecipesAPI2.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DD7761D-12E2-4BA1-9DF2-9D4612714A1F}|RecipesAPI2.csproj|c:\\git\\saitynaigit\\ktu_receptai\\recipesapi2\\helpers\\extemsions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DD7761D-12E2-4BA1-9DF2-9D4612714A1F}|RecipesAPI2.csproj|solutionrelative:helpers\\extemsions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,17 +46,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 270,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Git\\SaitynaiGit\\ktu_receptai\\RecipesAPI2\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Git\\SaitynaiGit\\ktu_receptai\\RecipesAPI2\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAACIAAAADAAAAAAAAAA==",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAAAGEAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-09T14:56:16.04Z",
               "IsPinned": true,
@@ -52,13 +64,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "AuthEndpoints.cs",
               "DocumentMoniker": "C:\\Git\\SaitynaiGit\\ktu_receptai\\RecipesAPI2\\Auth\\AuthEndpoints.cs",
               "RelativeDocumentMoniker": "Auth\\AuthEndpoints.cs",
               "ToolTip": "C:\\Git\\SaitynaiGit\\ktu_receptai\\RecipesAPI2\\Auth\\AuthEndpoints.cs",
               "RelativeToolTip": "Auth\\AuthEndpoints.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAAHkAAAAAAAAAAAAgwJUAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-19T20:45:20.009Z",
               "IsPinned": true,
@@ -66,13 +78,56 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
+              "Title": "Step.cs",
+              "DocumentMoniker": "C:\\Git\\SaitynaiGit\\ktu_receptai\\RecipesAPI2\\Data\\Entities\\Step.cs",
+              "RelativeDocumentMoniker": "Data\\Entities\\Step.cs",
+              "ToolTip": "C:\\Git\\SaitynaiGit\\ktu_receptai\\RecipesAPI2\\Data\\Entities\\Step.cs",
+              "RelativeToolTip": "Data\\Entities\\Step.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACEAAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T17:02:28.136Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Extemsions.cs",
+              "DocumentMoniker": "C:\\Git\\SaitynaiGit\\ktu_receptai\\RecipesAPI2\\Helpers\\Extemsions.cs",
+              "RelativeDocumentMoniker": "Helpers\\Extemsions.cs",
+              "ToolTip": "C:\\Git\\SaitynaiGit\\ktu_receptai\\RecipesAPI2\\Helpers\\Extemsions.cs",
+              "RelativeToolTip": "Helpers\\Extemsions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T17:01:47.981Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RecipeDbContext.cs",
+              "DocumentMoniker": "C:\\Git\\SaitynaiGit\\ktu_receptai\\RecipesAPI2\\Data\\RecipeDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\RecipeDbContext.cs",
+              "ToolTip": "C:\\Git\\SaitynaiGit\\ktu_receptai\\RecipesAPI2\\Data\\RecipeDbContext.cs",
+              "RelativeToolTip": "Data\\RecipeDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T17:01:45.795Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Ingredient.cs",
               "DocumentMoniker": "C:\\Git\\SaitynaiGit\\ktu_receptai\\RecipesAPI2\\Data\\Entities\\Ingredient.cs",
               "RelativeDocumentMoniker": "Data\\Entities\\Ingredient.cs",
               "ToolTip": "C:\\Git\\SaitynaiGit\\ktu_receptai\\RecipesAPI2\\Data\\Entities\\Ingredient.cs",
               "RelativeToolTip": "Data\\Entities\\Ingredient.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABUAAAA9AAAAAAAAAA==",
+              "ViewState": "AgIAABwAAAAAAAAAAAAYwDQAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-18T20:06:34.237Z",
               "EditorCaption": ""
@@ -85,40 +140,36 @@
               "RelativeDocumentMoniker": "Data\\Entities\\Session.cs",
               "ToolTip": "C:\\Git\\SaitynaiGit\\ktu_receptai\\RecipesAPI2\\Data\\Entities\\Session.cs",
               "RelativeToolTip": "Data\\Entities\\Session.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAUAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-18T20:06:31.067Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "Recipe.cs",
               "DocumentMoniker": "C:\\Git\\SaitynaiGit\\ktu_receptai\\RecipesAPI2\\Data\\Entities\\Recipe.cs",
               "RelativeDocumentMoniker": "Data\\Entities\\Recipe.cs",
               "ToolTip": "C:\\Git\\SaitynaiGit\\ktu_receptai\\RecipesAPI2\\Data\\Entities\\Recipe.cs",
               "RelativeToolTip": "Data\\Entities\\Recipe.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAA9wBQAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAA0wC0AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-18T19:36:17.282Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Endpoints.cs",
               "DocumentMoniker": "C:\\Git\\SaitynaiGit\\ktu_receptai\\RecipesAPI2\\Endpoints.cs",
               "RelativeDocumentMoniker": "Endpoints.cs",
               "ToolTip": "C:\\Git\\SaitynaiGit\\ktu_receptai\\RecipesAPI2\\Endpoints.cs",
               "RelativeToolTip": "Endpoints.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAIA7wB0AAABVAAAAAAAAAA==",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAAwEsAAABmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-18T19:35:01.288Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:1:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
             }
           ]
         }
