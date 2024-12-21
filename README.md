@@ -69,6 +69,7 @@ The system aims to create a convenient and interactive platform where users can 
 ### Open API ###
 
 Link to visualized yml: https://codebeautify.org/yaml-viewer-online/y2439e057
+
 Link to original yml: https://github.com/ignasked/ktu_receptai/blob/main/openapi.yml
 
 
